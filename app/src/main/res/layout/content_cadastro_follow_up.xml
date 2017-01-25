@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cadastro_follow_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroFollowUpActivity"
+    tools:showIn="@layout/activity_cadastro_follow_up">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nome_empresa"
+                style="@style/TitleNameBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/output_nivel_interesse_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/nivel_interesse_text" />
+
+            <SeekBar
+                android:id="@+id/input_nivel_interesse_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5" />
+
+            <CheckBox
+                android:id="@+id/nao_retornar"
+                style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Não retornar mais" />
+
+            <LinearLayout
+                android:id="@+id/layout_tempo_retorno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                        android:id="@+id/tempo_retorno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_menu_phone"
+                        android:inputType="number"
+                        android:drawablePadding="@dimen/drawable_padding_text"
+                        android:hint="@string/hint_retorno_dias" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/retorno_medida"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.5"
+                    android:gravity="right|bottom" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                    android:id="@+id/input_observacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_comments"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:hint="@string/hint_observacao"
+                    android:inputType="textMultiLine" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

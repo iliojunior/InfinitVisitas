@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tempo_medida">
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Meses</item>
+        <item>Anos</item>
+    </string-array>
+</resources>

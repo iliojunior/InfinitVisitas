@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_one"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_agenda"
+            android:icon="@drawable/ic__calendar"
+            android:title="@string/nav_agenda" />
+        <item
+            android:id="@+id/nav_leads"
+            android:icon="@drawable/ic_user"
+            android:title="@string/nav_lead" />
+        <item
+            android:id="@+id/nav_leads_qualificados"
+            android:icon="@drawable/ic_user_plus"
+            android:title="@string/nav_lead_qualificado" />
+        <item
+            android:id="@+id/nav_oportunidade"
+            android:icon="@drawable/ic_light"
+            android:title="@string/nav_oportunidade" />
+        <item
+            android:id="@+id/nav_venda"
+            android:icon="@drawable/ic_pool"
+            android:title="@string/nav_venda" />
+        <item
+            android:id="@+id/nav_contatos"
+            android:icon="@drawable/ic_user_contact"
+            android:title="@string/nav_contatos" />
+    </group>
+
+    <group
+        android:id="@+id/group_two"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_menu_sync"
+            android:title="@string/nav_sincronizar" />
+        <item
+            android:id="@+id/nav_logoff"
+            android:icon="@drawable/ic_menu_logoff"
+            android:title="@string/nav_sair" />
+    </group>
+</menu>

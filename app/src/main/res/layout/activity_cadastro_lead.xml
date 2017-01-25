@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visita_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroLeadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/output_nivel_interesse_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nível de interese" />
+
+            <SeekBar
+                android:id="@+id/input_nivel_interesse_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="5" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_nome_empresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                    android:id="@+id/cadastro_nomeEmpresaCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:ems="10"
+                    android:hint="@string/hint_nome_empresa"
+                    android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_cpf_cnpj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                    android:id="@+id/input_cpf_cnpj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:hint="@string/hint_cpf_cnpj"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_field_margin_top"
+                    android:drawableLeft="@drawable/ic_menu_email"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:ems="10"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_endereco_logradouro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_endereco_lograoudro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                            android:id="@+id/input_endereco_logradouro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_field_margin_top"
+                            android:drawableLeft="@drawable/ic_menu_home"
+                            android:drawablePadding="@dimen/drawable_padding_text"
+                            android:ems="10"
+                            android:hint="@string/hint_endereco_logradouro"
+
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton_current_location"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/input_height_size"
+                    android:layout_marginTop="12dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="0dp"
+                    android:src="@drawable/ic_menu_local" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_endereco_bairro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                        android:id="@+id/input_endereco_bairro"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height_size"
+                        android:layout_marginTop="@dimen/text_field_margin_top"
+                        android:drawableLeft="@drawable/ic_menu_home"
+                        android:drawablePadding="@dimen/drawable_padding_text"
+                        android:ems="10"
+                        android:hint="@string/hint_endereco_bairro"
+                        android:inputType="text"
+                        android:paddingTop="@dimen/activity_vertical_margin" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_endereco_numero"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6">
+
+                    <EditText
+                        android:id="@+id/input_endereco_numero"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height_size"
+                        android:layout_marginTop="@dimen/text_field_margin_top"
+                        android:ems="10"
+                        android:hint="@string/hint_endereco_numero"
+                        android:inputType="number"
+                        android:paddingTop="@dimen/activity_vertical_margin" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_endereco_municipio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                        android:id="@+id/input_endereco_municipio"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height_size"
+                        android:layout_marginTop="@dimen/text_field_margin_top"
+                        android:drawableLeft="@drawable/ic_menu_home"
+                        android:drawablePadding="@dimen/drawable_padding_text"
+                        android:ems="10"
+                        android:hint="@string/hint_endereco_municipio"
+                        android:inputType="text"
+                        android:paddingTop="@dimen/activity_vertical_margin" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_endereco_uf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6">
+
+                    <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                        android:id="@+id/input_endereco_uf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height_size"
+                        android:layout_marginTop="@dimen/text_field_margin_top"
+                        android:ems="10"
+                        android:hint="@string/hint_endereco_uf"
+                        android:inputType="text"
+                        android:paddingTop="@dimen/activity_vertical_margin" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_field_margin_top"
+                    android:drawableLeft="@drawable/ic_menu_phone"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:ems="10"
+                    android:hint="@string/hint_telefone"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_field_margin_top"
+                    android:drawableLeft="@drawable/ic_menu_cell_phone"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:ems="10"
+                    android:hint="@string/hint_celular"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_responsavel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                    android:id="@+id/input_responsavel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_field_margin_top"
+                    android:drawableLeft="@drawable/ic_user"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:hint="@string/hint_responsavel"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

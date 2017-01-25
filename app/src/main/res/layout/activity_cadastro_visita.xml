@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro_lead"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroVisitasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nome_empresa"
+                style="@style/TitleNameBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                        android:id="@+id/input_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height_size"
+                        android:layout_marginTop="@dimen/text_field_margin_top"
+                        android:drawableLeft="@drawable/ic_menu_calendar_light"
+                        android:drawablePadding="@dimen/drawable_padding_text"
+                        android:ems="10"
+                        android:hint="@string/hint_data_visita"
+                        android:inputType="date"
+                        android:longClickable="false"
+                        android:paddingTop="@dimen/activity_vertical_margin" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                        android:id="@+id/input_hora"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_height_size"
+                        android:layout_marginTop="@dimen/text_field_margin_top"
+                        android:ems="10"
+                        android:hint="@string/hint_hora_visita"
+                        android:inputType="datetime"
+                        android:longClickable="false"
+                        android:paddingTop="@dimen/activity_vertical_margin" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <br.com.infinitsolucoes.infinitvisitas.Componentes.EditTextWithoutEmoji
+                    android:id="@+id/input_observacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_comments"
+                    android:drawablePadding="@dimen/drawable_padding_text"
+                    android:ems="10"
+                    android:hint="@string/hint_observacao"
+                    android:maxLines="999" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

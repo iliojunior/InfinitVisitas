@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp">
+
+    <TableRow
+        android:id="@+id/table_row_data_hora_visita"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/list_agenda_data_visita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10/01" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/list_agenda_hora_visita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="14:00" />
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_row_nome_empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/list_agenda_nome_empresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="JP Suprimentos"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_title" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_row_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/list_agenda_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Av. Mandacaru, 1375" />
+    </TableRow>
+</TableLayout>

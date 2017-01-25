@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary100">#BBDEFB</color>
+    <color name="colorPrimary200">#90CAF9</color>
+    <color name="colorPrimary300">#64B5F6</color>
+    <color name="colorPrimary500">#2196F3</color>
+    <color name="colorPrimary700">#1976D2</color>
+    <color name="colorPrimary800">#1565C0</color>
+
+    <color name="colorAccent500">#FFC107</color>
+    <color name="colorAccent400">#ffca28</color>
+    <color name="colorAccent300">#FFD54F</color>
+    <color name="colorTitle">@color/colorPrimary500</color>
+    <color name="black_semi_transparent">#B2000000</color>
+
+</resources>

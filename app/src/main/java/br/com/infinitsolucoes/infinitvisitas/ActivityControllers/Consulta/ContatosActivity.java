@@ -14,7 +14,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroLeadActivity;
-import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.InfinitAppCompatActivity;
 import br.com.infinitsolucoes.infinitvisitas.Adapters.ContatosCustomList;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.EmpresaCRUD;
 import br.com.infinitsolucoes.infinitvisitas.Business.Enumerador;

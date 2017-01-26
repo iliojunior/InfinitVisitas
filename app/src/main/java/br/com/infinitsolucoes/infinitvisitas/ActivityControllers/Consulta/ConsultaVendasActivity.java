@@ -14,7 +14,6 @@ import com.github.clans.fab.FloatingActionMenu;
 import java.sql.SQLException;
 import java.util.List;
 
-import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.InfinitAppCompatActivity;
 import br.com.infinitsolucoes.infinitvisitas.Adapters.VendasCustomList;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.VendaCRUD;
 import br.com.infinitsolucoes.infinitvisitas.Controllers.VendasController;

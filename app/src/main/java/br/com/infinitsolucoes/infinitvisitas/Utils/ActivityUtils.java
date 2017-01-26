@@ -44,6 +44,7 @@ public final class ActivityUtils {
                 case R.id.nav_contatos:
                     openActivity(context, drawerLayout, ContatosActivity.class);
                 case R.id.nav_logoff:
+
                     break;
             }
             return false;

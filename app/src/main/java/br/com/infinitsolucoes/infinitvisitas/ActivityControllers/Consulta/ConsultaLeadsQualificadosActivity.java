@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroLeadActivity;
-import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.InfinitAppCompatActivity;
 import br.com.infinitsolucoes.infinitvisitas.Adapters.LeadQualificadoCustomList;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.EmpresaCRUD;
 import br.com.infinitsolucoes.infinitvisitas.Business.Enumerador;

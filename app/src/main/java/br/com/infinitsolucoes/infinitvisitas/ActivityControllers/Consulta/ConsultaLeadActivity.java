@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
@@ -24,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroLeadActivity;
-import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.InfinitAppCompatActivity;
 import br.com.infinitsolucoes.infinitvisitas.Adapters.LeadCustomList;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.EmpresaCRUD;
 import br.com.infinitsolucoes.infinitvisitas.Business.Enumerador;

@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroVisitasActivity;
-import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.InfinitAppCompatActivity;
 import br.com.infinitsolucoes.infinitvisitas.Adapters.OportunidadeCustomList;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.VendaCRUD;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.VisitaCRUD;
@@ -88,6 +87,12 @@ public class ConsultaOportunidadeActivity extends InfinitAppCompatActivity {
         final AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         switch (item.getItemId()) {
             case R.id.sell_item:
+                final AlertDialog.Builder builder = new AlertDialog.Builder(ConsultaOportunidadeActivity.this);
+                builder.setTitle("Vendas");
+                builder.setMessage("Deseja realmente transformar essa visita em uma venda?");
+                builder.setPositiveButton("Sim", (d, v) -> venderByVisita(info.position));
+                builder.setNegativeButton("Não", null);
+                builder.create().show();
                 venderByVisita(info.position);
                 return true;
             case R.id.edit_item:

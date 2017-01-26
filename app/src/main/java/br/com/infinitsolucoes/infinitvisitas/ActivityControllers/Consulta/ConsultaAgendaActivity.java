@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
@@ -21,7 +20,6 @@ import java.sql.SQLException;
 import java.util.List;
 
 import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.Cadastro.CadastroVisitasActivity;
-import br.com.infinitsolucoes.infinitvisitas.ActivityControllers.InfinitAppCompatActivity;
 import br.com.infinitsolucoes.infinitvisitas.Adapters.AgendaCustomList;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.VendaCRUD;
 import br.com.infinitsolucoes.infinitvisitas.Business.Data.CRUD.VisitaCRUD;
@@ -102,7 +100,12 @@ public class ConsultaAgendaActivity extends InfinitAppCompatActivity {
         final AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         switch (item.getItemId()) {
             case R.id.sell_item:
-                venderByVisita(info.position);
+                final AlertDialog.Builder builder = new AlertDialog.Builder(ConsultaAgendaActivity.this);
+                builder.setTitle("Vendas");
+                builder.setMessage("Deseja realmente transformar essa visita em uma venda?");
+                builder.setPositiveButton("Sim", (d, v) -> venderByVisita(info.position));
+                builder.setNegativeButton("Não", null);
+                builder.create().show();
                 return true;
             case R.id.edit_item:
                 editarVisita(info.position);

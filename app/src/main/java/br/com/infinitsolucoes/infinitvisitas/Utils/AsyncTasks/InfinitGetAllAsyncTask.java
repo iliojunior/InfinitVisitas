@@ -6,7 +6,6 @@ import android.support.annotation.Size;
 import org.jetbrains.annotations.NotNull;
 
 import br.com.infinitsolucoes.infinitvisitas.R;
-import br.com.infinitsolucoes.infinitvisitas.Utils.InfinitAsyncTask;
 
 public abstract class InfinitGetAllAsyncTask<Params, Progress, Result>
         extends InfinitAsyncTask<Params, Progress, Result> {

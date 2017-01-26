@@ -7,7 +7,6 @@ import org.jetbrains.annotations.NotNull;
 
 import br.com.infinitsolucoes.infinitvisitas.Business.Enumerador;
 import br.com.infinitsolucoes.infinitvisitas.R;
-import br.com.infinitsolucoes.infinitvisitas.Utils.InfinitAsyncTask;
 
 
 public abstract class InfinitDeleteAsyncTask<Params, Progress, Result>
